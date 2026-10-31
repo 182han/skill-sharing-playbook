@@ -1,0 +1,872 @@
+# Elite20 挑战交付物注册表（自动生成，勿手改）
+# 重新生成：python3 scripts/build_challenge_index.py --packs-root <资料包> --out <本文件>
+version: 1
+generated_at: '2026-10-03 18:38:00'
+generated_from: /Users/zhanghao/Desktop/EduSeed挑战资料包
+note: 本文件由 build_challenge_index.py 从官方 challenge.json + CHALLENGE.md 生成；人工只加了「匹配规则解释」与「C4 传播机制提示」，未改动官方要求。
+challenges:
+  C1:
+    title: C1 课程资料获取与翻译
+    source_json: 01_C1 课程资料获取与翻译/challenge.json
+    raw_deliverables: README.md,*AI日志*,*AAR*,*拿来说明*
+    submit_table: []
+    required:
+    - key: README.md
+      globs:
+      - README.md
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: README.md
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    - key: AAR
+      globs:
+      - '*AAR*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AAR*'
+    - key: 拿来说明
+      globs:
+      - '*拿来说明*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*拿来说明*'
+    notes: []
+  C2:
+    title: C2 AI for Math 论文
+    source_json: 02_C2 AI for Math 论文/challenge.json
+    raw_deliverables: paper.tex,references.bib,*AI日志*,*AAR*
+    submit_table: []
+    required:
+    - key: paper.tex
+      globs:
+      - paper.tex
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: paper.tex
+    - key: references.bib
+      globs:
+      - references.bib
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: references.bib
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    - key: AAR
+      globs:
+      - '*AAR*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AAR*'
+    notes: []
+  C2A:
+    title: C2A / C9：衡量 AGI 的认知能力
+    source_json: 03_C2A · C9：衡量 AGI 的认知能力/challenge.json
+    raw_deliverables: '*proposal*,*benchmark*,*AI日志*,*AAR*'
+    submit_table:
+    - 文件: 提案正文
+      命名格式: '`姓名_C2A_proposal.md` 或 `.pdf`'
+      说明: 800–1500 字，含以上四部分
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C2A_AI日志.md`'
+      说明: 论文精读、方案构思、写作过程中的 AI 使用记录
+    - 文件: 拿来说明
+      命名格式: '`姓名_C2A_拿来说明.md`'
+      说明: 参考了哪些已有 benchmark、论文、框架（可合并到提案中）
+    - 文件: Benchmark 代码
+      命名格式: '`姓名_C9_benchmark/` 或 GitHub 链接'
+      说明: 完整代码 + README
+    - 文件: 任务说明文档
+      命名格式: '`姓名_C9_task说明.md`'
+      说明: 评估任务描述 + 评分标准
+    - 文件: 测试结果
+      命名格式: '`姓名_C9_测试结果.md`'
+      说明: 至少一个模型的测试数据
+    - 文件: 反思报告
+      命名格式: '`姓名_C9_反思报告.md`'
+      说明: 500–800 字
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C9_AI日志.md`'
+      说明: 开发全过程 AI 使用记录
+    - 文件: 拿来说明
+      命名格式: '`姓名_C9_拿来说明.md`'
+      说明: 参考的 benchmark、代码、论文
+    required:
+    - key: proposal
+      globs:
+      - '*proposal*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*proposal*'
+    - key: benchmark
+      globs:
+      - '*benchmark*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*benchmark*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    - key: AAR
+      globs:
+      - '*AAR*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AAR*'
+    notes: []
+  C2G:
+    title: C2G 参数高尔夫 —— 极限约束下的语言模型训练
+    source_json: 04_C2G 参数高尔夫 —— 极限约束下的语言模型训练/challenge.json
+    raw_deliverables: '*方案草案*,*方案设计*,*AI日志*,*AAR*'
+    submit_table:
+    - 文件: '**⚡ 方案草案（算力申请用）**'
+      命名格式: '`姓名_C2G_方案草案.md`'
+      说明: ≥ 500 字，回答 4 个门槛问题。**无此项无法领算力券、无法进入 Level 1。**
+    - 文件: '**方案设计文档**'
+      命名格式: '`姓名_C2G_方案设计.md`'
+      说明: 目标 Level、技术选型、实验矩阵（在方案草案基础上扩展）
+    - 文件: '**训练代码**'
+      命名格式: '`姓名_C2G_train_gpt.py`'
+      说明: 最终提交的训练脚本
+    - 文件: '**16MB Artifact**'
+      命名格式: '`姓名_C2G_submission.tar.gz`'
+      说明: 含代码 + 压缩权重 + tokenizer
+    - 文件: '**提交元数据**'
+      命名格式: '`姓名_C2G_submission.json`'
+      说明: BPB、训练时间、硬件、seed
+    - 文件: '**训练日志**'
+      命名格式: '`姓名_C2G_logs/`'
+      说明: 至少 3 个独立 seed 的完整日志
+    - 文件: '**消融实验报告**'
+      命名格式: '`姓名_C2G_ablation.md`'
+      说明: 每个组件的单独贡献 + 组合效应
+    - 文件: '**BPB 对比表**'
+      命名格式: '`姓名_C2G_leaderboard.md`'
+      说明: 你的方案 vs baseline vs 当前 SOTA
+    - 文件: '**⚡ AI 日志（必须）**'
+      命名格式: '`姓名_C2G_AI日志.md`'
+      说明: 开发全过程 AI 使用记录。**无此项无法评审。**
+    - 文件: '**拿来说明**'
+      命名格式: '`姓名_C2G_拿来说明.md`'
+      说明: 从 nanoGPT / 官方 repo / 历史 top 方案拿了什么、改了什么
+    - 文件: '**（Level 4 额外）**'
+      命名格式: '`姓名_C2G_tech_report.pdf`'
+      说明: 6+ 页英文技术报告，格式参考 NeurIPS workshop
+    required:
+    - key: 方案草案
+      globs:
+      - '*方案草案*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*方案草案*'
+    - key: 方案设计
+      globs:
+      - '*方案设计*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*方案设计*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    - key: AAR
+      globs:
+      - '*AAR*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AAR*'
+    notes: []
+  C3:
+    title: C3 群内高质量参与
+    source_json: 05_C3 群内高质量参与/challenge.json
+    raw_deliverables: '*AI日志*,*AAR*,*反思*'
+    submit_table: []
+    required:
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    - key: AAR
+      globs:
+      - '*AAR*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AAR*'
+    - key: 反思
+      globs:
+      - '*反思*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*反思*'
+    notes: []
+  C3C:
+    title: C3C 双人协作与技能迁移
+    source_json: 06_C3C 双人协作与技能迁移/challenge.json
+    raw_deliverables: '*协作记录*,*联合成果*,*AI日志*,*AAR*'
+    submit_table: []
+    required:
+    - key: 协作记录
+      globs:
+      - '*协作记录*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*协作记录*'
+    - key: 联合成果
+      globs:
+      - '*联合成果*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*联合成果*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    - key: AAR
+      globs:
+      - '*AAR*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AAR*'
+    notes: []
+  C4:
+    title: C4 技能分享与传播
+    source_json: 07_C4 技能分享与传播/challenge.json
+    raw_deliverables: '*skill说明*,*.skill,*教学说明*,*demo*,*AI日志*'
+    submit_table:
+    - 文件: Skill 说明文档
+      命名格式: '`姓名_C4_skill说明.md`'
+      说明: 解决什么问题、使用场景、输入输出、使用步骤、真实案例
+    - 文件: 可执行内容
+      命名格式: '`姓名_C4_技能名.skill` 或 `.py` 或 `.md`'
+      说明: 可安装的 .skill 包 / prompt / 代码 / workflow
+    - 文件: Demo
+      命名格式: '`姓名_C4_demo.mp4` 或截图'
+      说明: 视频、截图、或 live demo
+    - 文件: 教学说明
+      命名格式: '`姓名_C4_教学说明.md`'
+      说明: 如何上手、常见坑、优化技巧——关键是**教别人用**
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C4_AI日志.md`'
+      说明: 用了什么 AI、怎么指挥的、迭代了几轮、你做了什么
+    required:
+    - key: Skill 说明文档
+      globs:
+      - '*skill说明*'
+      - '*skill说明*.md'
+      desc: 解决什么问题 / 使用场景 / 输入输出 / 使用步骤 / 真实案例
+      source: challenge.json + CHALLENGE.md:提交内容表
+      origin_token: '*skill说明*'
+    - key: 可执行技能包
+      globs:
+      - '*.skill'
+      - '*技能名*.py'
+      desc: 可安装的 .skill（tar.gz）或等价 .py / .md；必须真能装、能跑
+      source: challenge.json + CHALLENGE.md:提交内容表
+      origin_token: '*.skill'
+    - key: 教学说明
+      globs:
+      - '*教学说明*'
+      - '*教学说明*.md'
+      desc: 如何上手、常见坑、优化技巧——关键是教别人用
+      source: challenge.json + CHALLENGE.md:提交内容表
+      origin_token: '*教学说明*'
+    - key: Demo
+      globs:
+      - '*demo*'
+      - '*demo*.mp4'
+      - '*demo*.png'
+      - '*demo*.jpg'
+      desc: 视频 / 截图 / live demo；无法录制的写清待办并给录屏脚本
+      source: challenge.json + CHALLENGE.md:提交内容表
+      origin_token: '*demo*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    notes:
+    - C4 评分不看技能多厉害，看「被使用次数」——交付包必须包含传播动作证据（群内发布 + 试用邀请 + 反馈收集）。
+    - 传播动作只能本人做：缺口请写成 `【待本人执行】`，不得伪造使用次数。
+  C4A:
+    title: C4A 技能提交自动评审
+    source_json: 08_C4A 技能提交自动评审/challenge.json
+    raw_deliverables: '*方案设计*,*skill-evaluator*,*评审报告*,*AI日志*'
+    submit_table:
+    - 文件: 方案设计文档
+      命名格式: '`姓名_C4A_方案设计.md`'
+      说明: 你的架构设计、评审维度定义、技术选型理由
+    - 文件: 可安装技能包
+      命名格式: '`姓名_C4A_skill-evaluator.skill` 或源码目录'
+      说明: 可运行的技能（.skill 包 / Python 脚本 / SKILL.md）
+    - 文件: 真实评审报告
+      命名格式: '`姓名_C4A_评审报告.md`'
+      说明: 用你的技能对至少 3 份真实 C4 提交生成的评审结果
+    - 文件: 教学说明
+      命名格式: '`姓名_C4A_教学说明.md`'
+      说明: 怎么安装、怎么用、输入什么得到什么
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C4A_AI日志.md`'
+      说明: 开发全过程的 AI 使用记录
+    - 文件: 拿来说明
+      命名格式: '`姓名_C4A_拿来说明.md`'
+      说明: 从 wechat-doc-mapper 拿了什么、改了什么、为什么
+    required:
+    - key: 方案设计
+      globs:
+      - '*方案设计*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*方案设计*'
+    - key: skill-evaluator
+      globs:
+      - '*skill-evaluator*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*skill-evaluator*'
+    - key: 评审报告
+      globs:
+      - '*评审报告*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*评审报告*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    notes: []
+  C4B:
+    title: C4B 公众号文章生成技能
+    source_json: 09_C4B 公众号文章生成技能/challenge.json
+    raw_deliverables: '*wechat-publisher*,*文章链接*,*AI日志*'
+    submit_table:
+    - 文件: 定制后的技能包
+      命名格式: '`姓名_C4B_wechat-publisher.skill` 或源码目录'
+      说明: 你改造后的技能（.skill 包或目录）
+    - 文件: 公众号文章链接
+      命名格式: '`姓名_C4B_文章链接.md`'
+      说明: 真实发布的公众号文章 URL + 截图
+    - 文件: 文章源文件
+      命名格式: '`姓名_C4B_文章源文件.md` 或 `.docx`'
+      说明: 转换前的原始内容
+    - 文件: 转换后的 HTML
+      命名格式: '`姓名_C4B_output.html`'
+      说明: 技能生成的 WeChat HTML
+    - 文件: 教学说明
+      命名格式: '`姓名_C4B_教学说明.md`'
+      说明: 怎么安装、怎么用你的技能
+    - 文件: ⚡ AI 日志（必须）
+      命名格式: '`姓名_C4B_AI日志.md`'
+      说明: 包含 skill-creator 使用过程的完整记录。**无此项无法评审。**
+    - 文件: 拿来说明
+      命名格式: '`姓名_C4B_拿来说明.md`'
+      说明: 从 starter kit 拿了什么、改了什么、为什么
+    required:
+    - key: wechat-publisher
+      globs:
+      - '*wechat-publisher*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*wechat-publisher*'
+    - key: 文章链接
+      globs:
+      - '*文章链接*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*文章链接*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    notes: []
+  C4C:
+    title: C4C 作业自动求解与排版
+    source_json: 10_C4C 作业自动求解与排版/challenge.json
+    raw_deliverables: '*方案设计*,*homework-solver*,*output*,*AI日志*'
+    submit_table: []
+    required:
+    - key: 方案设计
+      globs:
+      - '*方案设计*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*方案设计*'
+    - key: homework-solver
+      globs:
+      - '*homework-solver*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*homework-solver*'
+    - key: output
+      globs:
+      - '*output*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*output*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    notes: []
+  C4D:
+    title: C4D 本地大模型 Agent 技能
+    source_json: 11_C4D 本地大模型 Agent 技能/challenge.json
+    raw_deliverables: '*Agent技能*,*demo*,*AI日志*,*AAR*'
+    submit_table: []
+    required:
+    - key: Agent技能
+      globs:
+      - '*Agent技能*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*Agent技能*'
+    - key: demo
+      globs:
+      - '*demo*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*demo*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    - key: AAR
+      globs:
+      - '*AAR*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AAR*'
+    notes: []
+  C5:
+    title: C5 GitHub Repository
+    source_json: 12_C5 GitHub Repository/challenge.json
+    raw_deliverables: README.md,*repo链接*,*AI日志*,*拿来说明*
+    submit_table:
+    - 文件: Repo 链接
+      命名格式: '`姓名_C5_repo链接.md`'
+      说明: GitHub URL + 一句话项目说明
+    - 文件: README 截图
+      命名格式: '`姓名_C5_readme截图.png`'
+      说明: 可选，展示 README 渲染效果
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C5_AI日志.md`'
+      说明: 开发过程中的 AI 使用记录（也放在 repo 内的 AI_LOG.md）
+    - 文件: 拿来说明
+      命名格式: '`姓名_C5_拿来说明.md`'
+      说明: 借鉴来源（也放在 repo 内的 ATTRIBUTION.md）
+    required:
+    - key: README.md
+      globs:
+      - README.md
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: README.md
+    - key: repo链接
+      globs:
+      - '*repo链接*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*repo链接*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    - key: 拿来说明
+      globs:
+      - '*拿来说明*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*拿来说明*'
+    notes: []
+  C5A:
+    title: C5A GitHub 入门与仓库理解
+    source_json: 13_C5A GitHub 入门与仓库理解/challenge.json
+    raw_deliverables: '*仓库分析*,README.md,*AI日志*'
+    submit_table: []
+    required:
+    - key: 仓库分析
+      globs:
+      - '*仓库分析*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*仓库分析*'
+    - key: README.md
+      globs:
+      - README.md
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: README.md
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    notes: []
+  C6:
+    title: C6 Web Application
+    source_json: 14_C6 Web Application/challenge.json
+    raw_deliverables: '*app链接*,*demo*,*repo链接*,*AI日志*'
+    submit_table:
+    - 文件: 可访问网址
+      命名格式: '`姓名_C6_app链接.md`'
+      说明: 部署后的 URL + 一句话产品说明
+    - 文件: Demo 视频
+      命名格式: '`姓名_C6_demo.mp4`'
+      说明: 30–60 秒演示核心功能（建议用录屏工具）
+    - 文件: GitHub repo
+      命名格式: '`姓名_C6_repo链接.md`'
+      说明: 源码地址（与 C5 联动）
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C6_AI日志.md`'
+      说明: 开发全过程的 AI 使用记录
+    - 文件: 拿来说明
+      命名格式: '`姓名_C6_拿来说明.md`'
+      说明: 借鉴来源
+    required:
+    - key: app链接
+      globs:
+      - '*app链接*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*app链接*'
+    - key: demo
+      globs:
+      - '*demo*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*demo*'
+    - key: repo链接
+      globs:
+      - '*repo链接*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*repo链接*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    notes: []
+  C6A:
+    title: C6A 提交数据仪表盘
+    source_json: 15_C6A 提交数据仪表盘/challenge.json
+    raw_deliverables: '*仪表盘*,*demo*,*数据*,*AI日志*'
+    submit_table: []
+    required:
+    - key: 仪表盘
+      globs:
+      - '*仪表盘*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*仪表盘*'
+    - key: demo
+      globs:
+      - '*demo*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*demo*'
+    - key: 数据
+      globs:
+      - '*数据*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*数据*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    notes: []
+  C7:
+    title: C7 内容传播
+    source_json: 16_C7 内容传播/challenge.json
+    raw_deliverables: '*文章标题*,*数据截图*,*AI日志*'
+    submit_table:
+    - 文件: 文章链接
+      命名格式: '`姓名_C7_文章标题.md`'
+      说明: 平台链接 + 一句话内容摘要
+    - 文件: 传播数据
+      命名格式: '`姓名_C7_数据截图.png`'
+      说明: 发布后截图：阅读量、点赞、评论等
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C7_AI日志.md`'
+      说明: 写作全过程的 AI 使用记录
+    - 文件: 拿来说明
+      命名格式: '`姓名_C7_拿来说明.md`'
+      说明: 参考了哪些文章/结构/方法
+    required:
+    - key: 文章标题
+      globs:
+      - '*文章标题*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*文章标题*'
+    - key: 数据截图
+      globs:
+      - '*数据截图*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*数据截图*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    notes: []
+  C8:
+    title: C8 Real-World Project Execution（真实项目落地）
+    source_json: 17_C8 Real-World Project Execution（真实项目落地）/challenge.json
+    raw_deliverables: '*proposal*,*AAR_W*,*AI日志*,*拿来说明*'
+    submit_table:
+    - 文件: 项目申请书
+      命名格式: '`姓名_C8_proposal.md`'
+      说明: 完整申请（含以下全部 5 个部分）
+    - 文件: 早期验证物
+      命名格式: '`姓名_C8_demo.*`'
+      说明: GitHub repo / Demo / 文档 / 原型（至少一个）
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C8_AI日志.md`'
+      说明: Proposal 写作过程的 AI 使用记录
+    - 文件: 拿来说明
+      命名格式: '`姓名_C8_拿来说明.md`'
+      说明: 参考来源
+    - 文件: 项目申请书
+      命名格式: '`姓名_C8_proposal.md`'
+      说明: 完整 5 部分 Proposal
+    - 文件: 早期验证物
+      命名格式: '`姓名_C8_demo.*`'
+      说明: repo / demo / 文档 / 原型
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C8_AI日志.md`'
+      说明: Proposal 写作过程
+    - 文件: 拿来说明
+      命名格式: '`姓名_C8_拿来说明.md`'
+      说明: 参考来源
+    - 文件: 周产出物
+      命名格式: '`姓名_C8_W周次_产出描述.*`'
+      说明: 本周可验证的交付物
+    - 文件: AAR 报告
+      命名格式: '`姓名_C8_AAR_W周次.md`'
+      说明: R̂ vs R + 失败分析 + 下周计划
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C8_W周次_AI日志.md`'
+      说明: 本周 AI 使用记录
+    - 文件: 拿来更新
+      命名格式: '`姓名_C8_W周次_拿来更新.md`'
+      说明: 本周发现的新参考来源
+    required:
+    - key: proposal
+      globs:
+      - '*proposal*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*proposal*'
+    - key: AAR_W
+      globs:
+      - '*AAR_W*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AAR_W*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    - key: 拿来说明
+      globs:
+      - '*拿来说明*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*拿来说明*'
+    notes: []
+  C9:
+    title: C9 Self-Initiated Project（自驱项目）
+    source_json: 18_C9 Self-Initiated Project（自驱项目）/challenge.json
+    raw_deliverables: '*proposal*,*AAR_W*,*AI日志*'
+    submit_table:
+    - 文件: 项目申请书
+      命名格式: '`姓名_C9_proposal.md`'
+      说明: 完整 5 部分（见下）
+    - 文件: MVP 验证物
+      命名格式: '`姓名_C9_mvp.*`'
+      说明: 第一周能展示的东西（必须有）
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C9_AI日志.md`'
+      说明: Proposal 写作过程
+    - 文件: 拿来说明
+      命名格式: '`姓名_C9_拿来说明.md`'
+      说明: 参考来源
+    - 文件: 项目申请书
+      命名格式: '`姓名_C9_proposal.md`'
+      说明: 完整 5 部分
+    - 文件: MVP 验证物
+      命名格式: '`姓名_C9_mvp.*`'
+      说明: 第一周可展示的产出
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C9_AI日志.md`'
+      说明: Proposal + MVP 的 AI 使用
+    - 文件: 拿来说明
+      命名格式: '`姓名_C9_拿来说明.md`'
+      说明: 参考来源
+    - 文件: 周产出物
+      命名格式: '`姓名_C9_W周次_产出描述.*`'
+      说明: 本周可展示的东西
+    - 文件: AAR 报告
+      命名格式: '`姓名_C9_AAR_W周次.md`'
+      说明: 含动力检查
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C9_W周次_AI日志.md`'
+      说明: 本周 AI 使用
+    required:
+    - key: proposal
+      globs:
+      - '*proposal*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*proposal*'
+    - key: AAR_W
+      globs:
+      - '*AAR_W*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AAR_W*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    notes: []
+  C10:
+    title: C10 Build Your Own Agent（构建你的长期智能体 / 第二大脑）
+    source_json: 19_C10 Build Your Own Agent（构建你的长期智能体 · 第二大脑）/challenge.json
+    raw_deliverables: AGENT.md,*architecture*,*AAR*,*AI日志*
+    submit_table:
+    - 文件: 系统架构说明
+      命名格式: '`姓名_C10_architecture.md`'
+      说明: 五层架构 + 设计决策
+    - 文件: Demo
+      命名格式: '`姓名_C10_demo.mp4` 或录屏'
+      说明: Agent 执行一次完整 KSTAR 循环
+    - 文件: Skill 库
+      命名格式: '`姓名_C10_skills/`'
+      说明: 至少 5 个真实使用过的 Skill
+    - 文件: 使用记录
+      命名格式: '`姓名_C10_usage_log.md`'
+      说明: 真实使用场景 + 实际效果
+    - 文件: 系统级 AAR
+      命名格式: '`姓名_C10_AAR.md`'
+      说明: 整个系统的反思：什么设计对了、什么错了
+    - 文件: ⚡ AI 日志
+      命名格式: '`姓名_C10_AI日志.md`'
+      说明: 构建过程的 AI 使用记录
+    - 文件: 拿来说明
+      命名格式: '`姓名_C10_拿来说明.md`'
+      说明: 参考来源
+    required:
+    - key: AGENT.md
+      globs:
+      - AGENT.md
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: AGENT.md
+    - key: architecture
+      globs:
+      - '*architecture*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*architecture*'
+    - key: AAR
+      globs:
+      - '*AAR*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AAR*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    notes: []
+  C10H:
+    title: C10H 安装并驾驭 Hermes Agent
+    source_json: 20_C10H 安装并驾驭 Hermes Agent/challenge.json
+    raw_deliverables: '*安装记录*,*配置说明*,*demo*,*AI日志*'
+    submit_table:
+    - 文件: 安装记录
+      命名格式: '`姓名_C10H_安装记录.md`'
+      说明: 安装过程截图 + 遇到的问题 + 解决方法
+    - 文件: 使用演示
+      命名格式: '`姓名_C10H_demo.mp4` 或截图'
+      说明: CLI 对话 + 平台接入 + 技能演示
+    - 文件: 配置说明
+      命名格式: '`姓名_C10H_配置说明.md`'
+      说明: LLM 选择、平台配置、SOUL.md 定制
+    - 文件: 技能文件
+      命名格式: '`姓名_C10H_自定义技能/`'
+      说明: 自定义创建的技能（如有）
+    - 文件: ⚡ AI 日志（必须）
+      命名格式: '`姓名_C10H_AI日志.md`'
+      说明: 安装和配置过程中的 AI 使用记录。**无此项无法评审。**
+    - 文件: 拿来说明
+      命名格式: '`姓名_C10H_拿来说明.md`'
+      说明: 从 Hermes Agent 拿了什么、自己做了什么
+    required:
+    - key: 安装记录
+      globs:
+      - '*安装记录*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*安装记录*'
+    - key: 配置说明
+      globs:
+      - '*配置说明*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*配置说明*'
+    - key: demo
+      globs:
+      - '*demo*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*demo*'
+    - key: AI日志
+      globs:
+      - '*AI日志*'
+      desc: 官方 challenge.json 的 required_deliverables 要求项
+      source: challenge.json:required_deliverables
+      origin_token: '*AI日志*'
+    notes: []

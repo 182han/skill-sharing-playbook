@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# 自检器的临时输出（报告默认写在 reports/，是否入库自行决定）
+/tmp/
+*.tmp
+
+# 技能打包中间产物
+skill_src/**/__pycache__/

@@ -1,0 +1,15 @@
+# 赵怡涵_C4_提交包 / elite20-packager 依赖
+#
+# 实测环境：macOS arm64 (Darwin 24.x) + Python 3.9.6
+# Python 版本要求：>= 3.8（用了 f-string 与 pathlib；未使用 3.10+ 语法）
+
+# --- 运行 elite20-packager 自检器所需 ---
+openpyxl>=3.0        # Excel 报告（packager_report.xlsx）。缺失时自动降级为只出 Markdown
+PyYAML>=5.4          # 读取 references/challenges_index.yaml 挑战注册表
+
+# --- 标准库（无需安装，列出以便核对）---
+# argparse, fnmatch, json, os, re, sys, tarfile, tempfile, pathlib, datetime, py_compile
+
+# --- 可选 ---
+# pytest>=7.0        # tests/test_smoke.py 不依赖 pytest，可直接 python3 运行；
+#                    # 装了 pytest 也可以 `pytest tests/` 跑

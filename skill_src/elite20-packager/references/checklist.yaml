@@ -1,0 +1,101 @@
+# Elite20 提交包自检清单（人类可读版 · 与脚本规则一一对应）
+#
+# 口径来源：
+#   - 《Elite20 挑战提交总则 v1.3》§3（六件套）§5.1（仓库结构）§6.1（G1/G3 群内发起）§9（G2 禁止手写）
+#   - 各挑战 CHALLENGE.md「提交内容」表 + rubric.json 的 red_flags
+# 权威实现：scripts/elite20_packager.py（本文件是它的镜像文档；
+#           tests/test_smoke.py 会校验两者不漂移）
+
+version: 1
+source_docs:
+  - "_交付规范_执行者必读.md §2 每个包必须有的文件"
+  - "_交付规范_执行者必读.md §3 诚实性规则"
+  - "_交付规范_执行者必读.md §4 AI 日志格式"
+  - "各挑战 rubric.json → red_flags"
+
+layers:
+  L1:
+    name: 六件套（命名：姓名_CX_*.md）
+    items:
+      - key: 方案草案
+        globs: ["*方案草案*.md", "*proposal*.md", "*草案*.md"]
+        min_chars: 500
+        probes: ["关卡|问题|自问|Q\\d|？|\\?"]
+        hint: "≥500 字，含「四个关卡问题」式自问自答"
+      - key: 方案设计
+        globs: ["*方案设计*.md", "*设计*.md", "*design*.md"]
+        min_chars: 800
+        probes: ["目标", "架构|结构", "选型|技术|理由", "风险"]
+        hint: "正式方案：目标 / 架构 / 技术选型理由 / 风险"
+      - key: G1背书
+        globs: ["*G1*.md", "*背书*.md"]
+        min_chars: 200
+        probes: ["G1", "群"]
+        hint: "群内发起模板 + 待填表格（发起动作只能本人做）"
+      - key: AI日志
+        globs: ["*AI日志*.md", "*AI_?日志*.md", "*ai.?log*.md"]
+        min_chars: 600
+        probes: ["决策节点"]
+        min_nodes: 3
+        hint: "≥3 个决策节点，格式见《交付规范》§4"
+      - key: 拿来说明
+        globs: ["*拿来说明*.md", "*说明来源*.md", "*credits*.md", "*attribution*.md"]
+        min_chars: 300
+        probes: ["License|许可证|MIT|Apache|AGPL|GPL|CC[ -]?BY|BSD|版权"]
+        hint: "复用来源表 + License + 改了什么"
+      - key: Portfolio条目
+        globs: ["*Portfolio*.md", "*PORTFOLIO*.md", "*作品集*.md"]
+        min_chars: 200
+        probes: ["证据|链接|http|path|文件"]
+        hint: "一句话价值 + 证据链接"
+      - key: AAR
+        globs: ["*AAR*.md", "*复盘*.md"]
+        min_chars: 800
+        probes: ["七维|维度", "重来|改进|下次"]
+        hint: "七维复盘（文首声明「七维为自拟」）"
+
+  L2:
+    name: 仓库结构
+    required:
+      - {key: README.md, min_bytes: 400, note: "六段：是什么/解决什么问题/快速开始/示例/项目结构/技术栈 + AI 生成说明 + 借鉴来源"}
+      - {key: CHANGELOG.md, min_bytes: 80, note: "写真实开发过程（含返工），不要只写版本号"}
+      - {key: LICENSE, min_bytes: 200, note: "代码 MIT；上游 AGPL 等另加 LICENSE-CONTENT.md"}
+      - {key: requirements.txt, min_bytes: 10, note: "可复现依赖，注明 Python 版本"}
+      - {key: scripts/reproduce.sh, min_bytes: 80, note: "一条命令跑完全部自检，必须真跑通"}
+      - {key: tests/test_smoke.py, min_bytes: 80, note: "≥1 冒烟测试，打印通过/失败计数"}
+      - {key: docs/文件对照表.md, note: "规范条目 ↔ 本包文件"}
+      - {key: docs/红线自测.md, note: "三条红线逐条自测 + 证据"}
+      - {key: docs/群消息留痕.md, note: "G1/G3 群消息记录模板（待本人填）"}
+      - {key: docs/demo.md, note: "演示步骤，别人照着能跑出来"}
+      - {key: G2验证报告_生成说明.md, note: "声明 G2 禁止手写，必须官方 skill 产出"}
+      - {key: 00_先读我_待办清单.md, note: "汇总全部【待本人执行】事项"}
+    recommended:
+      - {key: .gitignore}
+      - {key: LICENSE-CONTENT.md, when: "上游为 AGPL 等强传染协议时必需"}
+
+  L3:
+    name: 挑战专属交付物
+    source: "references/challenges_index.yaml（由 scripts/build_challenge_index.py 从官方 challenge.json + CHALLENGE.md 生成）"
+
+red_lines:
+  R1:
+    label: AI 日志与迭代痕迹
+    rule: "存在 AI 日志文件，且其中出现「决策节点」≥3 次"
+    rubric: "red_flags.no_ai_log / one_shot_ai（封顶 5 分）"
+  R2:
+    label: 拿来说明标明 License
+    rule: "存在拿来说明，且含 License/许可证/MIT/Apache/AGPL/GPL/CC BY/BSD/版权 之一；包内有 LICENSE 文件"
+    rubric: "《交付规范》§3 诚实性规则 + §2 LICENSE"
+  R3:
+    label: 可复现脚本
+    rule: "scripts/reproduce.sh 存在且非空；tests/ 下有冒烟测试"
+    rubric: "《交付规范》§6 验证要求"
+
+honesty_rules:
+  - "不伪造任何证据：没做的写「待本人执行」，不许编造已发布/已截图/已跑通"
+  - "只有本人能做的动作统一标【待赵怡涵执行】并在 00_先读我_待办清单.md 汇总"
+  - "脚本全绿 ≠ 东西是对的：结构自检只证明文件账本齐，内容正确性必须另证"
+
+disclaimer: >
+  本清单是「结构自检」口径，不是官方评分。通过率只是启发式指标，
+  不得当作 rubric 分数的预测。
